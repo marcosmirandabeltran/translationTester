@@ -15,8 +15,10 @@ import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.unmarshalling.{FromEntityUnmarshaller, FromMessageUnmarshaller, FromRequestUnmarshaller, Unmarshaller}
 import akka.stream.ActorMaterializer
 import com.sun.org.apache.xalan.internal.xsltc.compiler.Template
-import model.ToTranslateRequest
+import model.{ToTranslateRequest}
 import spray.json.RootJsonReader
+import model.ToTranslateRequestSupport._
+import model.ToTranslateRequest
 
 import scala.io.StdIn
 
@@ -42,12 +44,13 @@ object WebServer {
           }
       }~
       post {
-        path("test") {
-        decodeRequest{
-          entity(as[String])
-          complete("Post")
-        }
-        }
+
+          entity(as[ToTranslateRequest]){ toTranslateRequest =>
+            complete("Post " + toTranslateRequest.src)
+
+          }
+
+
       }
 
     // `route` will be implicitly converted to `Flow` using `RouteResult.route2HandlerFlow`
