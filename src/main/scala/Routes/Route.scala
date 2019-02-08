@@ -1,4 +1,3 @@
-import java.net.http.{HttpRequest, HttpResponse}
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
@@ -46,7 +45,7 @@ object WebServer {
       post {
 
           entity(as[ToTranslateRequest]){ toTranslateRequest =>
-            complete("Post " + toTranslateRequest.src)
+            complete("Post " + toTranslateRequest.segments.head)
 
           }
 
