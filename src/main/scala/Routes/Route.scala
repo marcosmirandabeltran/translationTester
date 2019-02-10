@@ -14,12 +14,12 @@ import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.unmarshalling.{FromEntityUnmarshaller, FromMessageUnmarshaller, FromRequestUnmarshaller, Unmarshaller}
 import akka.stream.ActorMaterializer
 import com.sun.org.apache.xalan.internal.xsltc.compiler.Template
-import model.{ToTranslateRequest}
-import spray.json.RootJsonReader
+import model.{ToTranslateRequest, TranslationModel}
 import model.ToTranslateRequestSupport._
 import model.ToTranslateRequest
-
+import scala.concurrent.Future
 import scala.io.StdIn
+
 
 object WebServer {
   def main(args: Array[String]) {
@@ -32,21 +32,22 @@ object WebServer {
 
     val route =
       get {
-        pathSingleSlash {
-          complete(HttpEntity(ContentTypes.`text/html(UTF-8)`,"<html><body>Hello world!</body></html>"))
-        } ~
-          path("ping") {
-            complete("PONG!")
+          path("status") {
+            complete("asd")
           } ~
           path("crash") {
             sys.error("BOOM!")
           }
       }~
       post {
+          entity(as[ToTranslateRequest]){ request =>
+            onSuccess(
+              Future.sequence(new TranslationModel(request).translate())){
+              translated =>
 
-          entity(as[ToTranslateRequest]){ toTranslateRequest =>
-            complete("Post " + toTranslateRequest.segments.head)
+              complete(translated)
 
+            }
           }
 
 
