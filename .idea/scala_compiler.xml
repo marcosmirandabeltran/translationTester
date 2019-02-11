@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="DEV,dev" />
-    <profile name="sbt 1" modules="dev" />
+    <profile name="sbt 1" modules="translationtester_1543,translationtester,root" />
   </component>
 </project>

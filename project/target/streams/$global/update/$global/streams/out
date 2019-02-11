@@ -1,37 +1,69 @@
-[info] Updating ProjectRef(uri("file:/D:/DEV/project/"), "dev-build")...
-[debug] :: resolving dependencies :: default#dev-build;0.1.0-SNAPSHOT
+[info] Updating ProjectRef(uri("file:/C:/Users/mirandm/translationTester/project/"), "translationtester-build")...
+[debug] :: resolving dependencies :: default#translationtester-build;0.1.0-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool]
 [debug] 	validate = true
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->com.eed3si9n#sbt-buildinfo;0.7.0 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] sbt-chain: Checking cache for: dependency: com.eed3si9n#sbt-buildinfo;0.7.0 {compile=[default(compile)]}
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.eed3si9n#sbt-buildinfo;0.7.0 {compile=[default(compile)]}
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/ivys/ivy.xml
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/ivys/ivy.xml
+[debug] 	typesafe-ivy-releases: no ivy file found for com.eed3si9n#sbt-buildinfo;0.7.0
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: found md file for com.eed3si9n#sbt-buildinfo;0.7.0
+[debug] 		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/ivys/ivy.xml (0.7.0)
+[debug] downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/ivys/ivy.xml ...
+[debug] 	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/ivys/ivy.xml
+[debug] 	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/ivys/ivy.xml.sha1
+[debug] sha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/ivys/ivy.xml
+[debug] 	[SUCCESSFUL ] com.eed3si9n#sbt-buildinfo;0.7.0!ivy.xml(ivy.original) (764ms)
+[debug] 	found com.eed3si9n#sbt-buildinfo;0.7.0 in sbt-plugin-releases
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}
 [debug] resolving dependencies for configuration 'runtime'
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->com.eed3si9n#sbt-buildinfo;0.7.0 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}
 [debug] resolving dependencies for configuration 'test'
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [test]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [test]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->com.eed3si9n#sbt-buildinfo;0.7.0 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}
 [debug] resolving dependencies for configuration 'provided'
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [provided]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->default(compile)]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [provided]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.7
 [debug] 	found org.scala-lang#scala-library;2.12.7 in sbt-chain
 [debug] 	[2.12.7] org.scala-lang#scala-library;2.12.7
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->runtime]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->compile]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->master]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->default(compile)]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->runtime]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->master]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;1.2.8 {provided=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#sbt;1.2.8
 [debug] 	found org.scala-sbt#sbt;1.2.8 in sbt-chain
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->runtime]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->runtime]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-sbt#sbt;1.2.8->org.scala-lang#scala-library;2.12.7 [compile->master(*)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
@@ -3699,7 +3731,7 @@
 [debug] sbt-chain: module revision found in cache: org.apache.logging.log4j#log4j-slf4j-impl;2.11.1
 [debug] 	found org.apache.logging.log4j#log4j-slf4j-impl;2.11.1 in sbt-chain
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->org.apache.logging.log4j#log4j-slf4j-impl;2.11.1 [compile->compile(*)]
-[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [compile->master(*)]
+[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [compile->master(compile)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->com.github.cb372#scalacache-caffeine_2.12;0.20.0 [compile->master(*)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
@@ -4496,9 +4528,9 @@
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->org.apache.logging.log4j#log4j-slf4j-impl;2.11.1 [runtime->compile]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [runtime->compile]
-[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->master(*)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->compile]
+[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->master(compile)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->compile(*)]
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->com.github.cb372#scalacache-caffeine_2.12;0.20.0 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->com.github.cb372#scalacache-caffeine_2.12;0.20.0 [runtime->compile]
@@ -4553,17 +4585,15 @@
 [debug] == resolving dependencies org.scala-sbt#sbt;1.2.8->org.scala-lang#scala-library;2.12.7 [runtime->compile]
 [debug] == resolving dependencies org.scala-sbt#sbt;1.2.8->org.scala-sbt#main_2.12;1.2.8 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-sbt#sbt;1.2.8->org.scala-sbt#main_2.12;1.2.8 [runtime->compile]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->master]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] resolving dependencies for configuration 'optional'
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'compile-internal'
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [compile-internal]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [compile]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [provided]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->default(compile)]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [compile-internal]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->com.eed3si9n#sbt-buildinfo;0.7.0 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
@@ -4572,10 +4602,10 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->runtime]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->compile]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->master]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [provided]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
@@ -4584,8 +4614,20 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->runtime]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->runtime]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->master]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->runtime]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-sbt#sbt;1.2.8->org.scala-lang#scala-library;2.12.7 [compile->master(*)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
@@ -8477,7 +8519,7 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->org.apache.logging.log4j#log4j-slf4j-impl;2.11.1 [compile->compile(*)]
-[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [compile->master(*)]
+[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [compile->master(compile)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->com.github.cb372#scalacache-caffeine_2.12;0.20.0 [compile->master(*)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
@@ -9295,9 +9337,9 @@
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->org.apache.logging.log4j#log4j-slf4j-impl;2.11.1 [runtime->compile]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [runtime->compile]
-[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->master(*)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->compile]
+[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->master(compile)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->compile(*)]
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->com.github.cb372#scalacache-caffeine_2.12;0.20.0 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->com.github.cb372#scalacache-caffeine_2.12;0.20.0 [runtime->compile]
@@ -9347,22 +9389,30 @@
 [debug] == resolving dependencies org.scala-sbt#zinc-compile_2.12;1.2.5->org.scala-sbt#util-tracking_2.12;1.2.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-sbt#zinc-compile_2.12;1.2.5->org.scala-sbt#util-tracking_2.12;1.2.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-sbt#zinc-compile_2.12;1.2.5->org.scala-sbt#util-tracking_2.12;1.2.4 [runtime->compile]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->master]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] resolving dependencies for configuration 'runtime-internal'
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [runtime-internal]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [compile]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [runtime-internal]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->com.eed3si9n#sbt-buildinfo;0.7.0 [compile->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'test-internal'
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [test-internal]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [test]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [compile]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [provided]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->default(compile)]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [test-internal]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [test]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->com.eed3si9n#sbt-buildinfo;0.7.0 [compile->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
@@ -9375,10 +9425,10 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->runtime]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->compile]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->master]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [provided]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->default(compile)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
@@ -9391,8 +9441,24 @@
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->runtime]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->runtime]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [provided->master]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->default(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
+[debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->runtime]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-sbt#sbt;1.2.8->org.scala-lang#scala-library;2.12.7 [compile->master(*)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
@@ -13584,7 +13650,7 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->org.apache.logging.log4j#log4j-slf4j-impl;2.11.1 [compile->compile(*)]
-[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [compile->master(*)]
+[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [compile->master(compile)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->com.github.cb372#scalacache-caffeine_2.12;0.20.0 [compile->master(*)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
@@ -14426,9 +14492,9 @@
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->org.apache.logging.log4j#log4j-slf4j-impl;2.11.1 [runtime->compile]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.slf4j#slf4j-api;1.7.25 [runtime->compile]
-[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->master(*)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->compile]
+[debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->master(compile)]
 [debug] == resolving dependencies org.apache.logging.log4j#log4j-slf4j-impl;2.11.1->org.apache.logging.log4j#log4j-core;2.11.1 [runtime->compile(*)]
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->com.github.cb372#scalacache-caffeine_2.12;0.20.0 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-sbt#main_2.12;1.2.8->com.github.cb372#scalacache-caffeine_2.12;0.20.0 [runtime->compile]
@@ -14478,20 +14544,20 @@
 [debug] == resolving dependencies org.scala-sbt#zinc-compile_2.12;1.2.5->org.scala-sbt#util-tracking_2.12;1.2.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-sbt#zinc-compile_2.12;1.2.5->org.scala-sbt#util-tracking_2.12;1.2.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-sbt#zinc-compile_2.12;1.2.5->org.scala-sbt#util-tracking_2.12;1.2.4 [runtime->compile]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->master]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-sbt#sbt;1.2.8 [provided->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] resolving dependencies for configuration 'plugin'
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [plugin]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [plugin]
 [debug] resolving dependencies for configuration 'pom'
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [pom]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [pom]
 [debug] resolving dependencies for configuration 'scala-tool'
-[debug] == resolving dependencies for default#dev-build;0.1.0-SNAPSHOT [scala-tool]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->default]
+[debug] == resolving dependencies for default#translationtester-build;0.1.0-SNAPSHOT [scala-tool]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->default]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->runtime]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->runtime]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->compile]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->master(*)]
@@ -14581,12 +14647,12 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.7 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.7 [runtime->compile]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->master]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->master]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->optional(default)]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->optional(default)]
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.7->jline#jline;2.14.6 [optional->master(*)]
@@ -14605,37 +14671,65 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}
 [debug] dependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {provided=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], provided=[default(compile)]}
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.7->jline#jline;2.14.6 [optional->compile(*)]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->default]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->runtime]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->compile]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->master]
-[debug] == resolving dependencies default#dev-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->optional(default)]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->default]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->runtime]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->compile]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->master]
+[debug] == resolving dependencies default#translationtester-build;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->optional(default)]
 [debug] ignoring unhandled DependencyDescriptorMediator: class sbt.internal.librarymanagement.IvyScalaUtil$OverrideScalaMediator
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/jars/sbt-buildinfo.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#main_2.12;1.2.8!main_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.7!scala-library.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#logic_2.12;1.2.8!logic_2.12.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#actions_2.12;1.2.8!actions_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.7!scala-library.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#main_2.12;1.2.8!main_2.12.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#sbt;1.2.8!sbt.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#main-settings_2.12;1.2.8!main-settings_2.12.jar
-[debug] no default ivy user dir defined: set to C:\Users\Marcos Miranda\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\Marcos Miranda\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\Marcos Miranda\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\Marcos Miranda\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\Marcos Miranda\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\Marcos Miranda\.ivy2
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] no default cache defined: set to C:\Users\Marcos Miranda\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (115ms)
-[debug] 	default cache: C:\Users\Marcos Miranda\.ivy2\cache
+[debug] no default ivy user dir defined: set to C:\Users\mirandm\.ivy2
+[debug] no default ivy user dir defined: set to C:\Users\mirandm\.ivy2
+[debug] no default ivy user dir defined: set to C:\Users\mirandm\.ivy2
+[debug] no default ivy user dir defined: set to C:\Users\mirandm\.ivy2
+[debug] no default ivy user dir defined: set to C:\Users\mirandm\.ivy2
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] no default cache defined: set to C:\Users\mirandm\.ivy2\cache
+[debug] no default cache defined: set to C:\Users\mirandm\.ivy2\cache
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] no default cache defined: set to C:\Users\mirandm\.ivy2\cache
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] no default cache defined: set to C:\Users\mirandm\.ivy2\cache
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] no default cache defined: set to C:\Users\mirandm\.ivy2\cache
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] settings loaded (53ms)
+[debug] 	default cache: C:\Users\mirandm\.ivy2\cache
 [debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] settings loaded (56ms)
+[debug] 	default cache: C:\Users\mirandm\.ivy2\cache
+[debug] 	default resolver: default
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
 [debug] 	-- 5 resolvers:
 [debug] 	shared [file]
 [debug] 	default [chain] [local, main]
@@ -14643,56 +14737,16 @@
 [debug] 	main [chain] [shared, public]
 [debug] 	local [file]
 [debug] 	[NOT REQUIRED] org.scala-sbt#run_2.12;1.2.8!run_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#main-settings_2.12;1.2.8!main-settings_2.12.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#command_2.12;1.2.8!command_2.12.jar
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
 [debug] 	[NOT REQUIRED] org.scala-sbt#collections_2.12;1.2.8!collections_2.12.jar
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
 [debug] 	[NOT REQUIRED] org.scala-sbt#scripted-sbt-redux_2.12;1.2.8!scripted-sbt-redux_2.12.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#scripted-plugin_2.12;1.2.8!scripted-plugin_2.12.jar
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)
 [debug] 	[NOT REQUIRED] org.scala-sbt#launcher-interface;1.0.4!launcher-interface.jar
-[debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-api;2.11.1!log4j-api.jar
-[debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-core;2.11.1!log4j-core.jar
-[debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-core;2.11.1!log4j-core.jar(test-jar)
-[debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-slf4j-impl;2.11.1!log4j-slf4j-impl.jar
-[debug] 	[NOT REQUIRED] com.github.cb372#scalacache-caffeine_2.12;0.20.0!scalacache-caffeine_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#io_2.12;1.2.2!io_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#util-logging_2.12;1.2.4!util-logging_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#librarymanagement-core_2.12;1.2.4!librarymanagement-core_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#librarymanagement-ivy_2.12;1.2.4!librarymanagement-ivy_2.12.jar
-[debug] no default cache defined: set to C:\Users\Marcos Miranda\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] 	[NOT REQUIRED] org.scala-sbt#compiler-interface;1.2.5!compiler-interface.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-compile_2.12;1.2.5!zinc-compile_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#util-relation_2.12;1.2.4!util-relation_2.12.jar
-[debug] 	[NOT REQUIRED] com.eed3si9n#sjson-new-scalajson_2.12;0.8.2!sjson-new-scalajson_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#util-position_2.12;1.2.4!util-position_2.12.jar
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] 	[NOT REQUIRED] com.eed3si9n#sjson-new-core_2.12;0.8.2!sjson-new-core_2.12.jar
-[debug] 	[NOT REQUIRED] com.eed3si9n#shaded-scalajson_2.12;1.0.0-M4!shaded-scalajson_2.12.jar
-[debug] 	[NOT REQUIRED] org.spire-math#jawn-parser_2.12;0.10.4!jawn-parser_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.7!scala-reflect.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#completion_2.12;1.2.8!completion_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#task-system_2.12;1.2.8!task-system_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#tasks_2.12;1.2.8!tasks_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#testing_2.12;1.2.8!testing_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#util-tracking_2.12;1.2.4!util-tracking_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-classpath_2.12;1.2.5!zinc-classpath_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-apiinfo_2.12;1.2.5!zinc-apiinfo_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-ivy-integration_2.12;1.2.5!zinc-ivy-integration_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#zinc_2.12;1.2.5!zinc_2.12.jar
-[debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#util-control_2.12;1.2.4!util-control_2.12.jar
-[debug] 	[NOT REQUIRED] com.swoval#apple-file-events;1.3.2!apple-file-events.jar
-[debug] 	[NOT REQUIRED] net.java.dev.jna#jna;4.5.0!jna.jar
-[debug] 	[NOT REQUIRED] net.java.dev.jna#jna-platform;4.5.0!jna-platform.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#util-interface;1.2.4!util-interface.jar
-[debug] 	[NOT REQUIRED] com.lmax#disruptor;3.4.2!disruptor.jar
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.7!scala-compiler.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#util-cache_2.12;1.2.4!util-cache_2.12.jar
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (164ms)
-[debug] 	default cache: C:\Users\Marcos Miranda\.ivy2\cache
+[debug] settings loaded (62ms)
+[debug] 	default cache: C:\Users\mirandm\.ivy2\cache
 [debug] 	default resolver: default
 [debug] 	-- 5 resolvers:
 [debug] 	shared [file]
@@ -14700,52 +14754,105 @@
 [debug] 	public [ibiblio]
 [debug] 	main [chain] [shared, public]
 [debug] 	local [file]
+[debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-api;2.11.1!log4j-api.jar
+[debug] settings loaded (63ms)
+[debug] 	default cache: C:\Users\mirandm\.ivy2\cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-slf4j-impl;2.11.1!log4j-slf4j-impl.jar
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] 	[NOT REQUIRED] org.apache.logging.log4j#log4j-core;2.11.1!log4j-core.jar
+[debug] 	[NOT REQUIRED] com.github.cb372#scalacache-caffeine_2.12;0.20.0!scalacache-caffeine_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#util-logging_2.12;1.2.4!util-logging_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#io_2.12;1.2.2!io_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#librarymanagement-ivy_2.12;1.2.4!librarymanagement-ivy_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#librarymanagement-core_2.12;1.2.4!librarymanagement-core_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-compile_2.12;1.2.5!zinc-compile_2.12.jar
+[debug] settings loaded (64ms)
+[debug] 	default cache: C:\Users\mirandm\.ivy2\cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] 	[NOT REQUIRED] org.scala-sbt#util-relation_2.12;1.2.4!util-relation_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#util-position_2.12;1.2.4!util-position_2.12.jar
+[debug] 	[NOT REQUIRED] com.eed3si9n#sjson-new-core_2.12;0.8.2!sjson-new-core_2.12.jar
+[debug] 	[NOT REQUIRED] com.eed3si9n#sjson-new-scalajson_2.12;0.8.2!sjson-new-scalajson_2.12.jar
+[debug] 	[NOT REQUIRED] org.spire-math#jawn-parser_2.12;0.10.4!jawn-parser_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.7!scala-reflect.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#completion_2.12;1.2.8!completion_2.12.jar
+[debug] 	[NOT REQUIRED] com.eed3si9n#shaded-scalajson_2.12;1.0.0-M4!shaded-scalajson_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#testing_2.12;1.2.8!testing_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#tasks_2.12;1.2.8!tasks_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-classpath_2.12;1.2.5!zinc-classpath_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#util-tracking_2.12;1.2.4!util-tracking_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-apiinfo_2.12;1.2.5!zinc-apiinfo_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-ivy-integration_2.12;1.2.5!zinc-ivy-integration_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#zinc_2.12;1.2.5!zinc_2.12.jar
+[debug] 	[NOT REQUIRED] com.swoval#apple-file-events;1.3.2!apple-file-events.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#util-control_2.12;1.2.4!util-control_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#task-system_2.12;1.2.8!task-system_2.12.jar
+[debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar
+[debug] 	[NOT REQUIRED] net.java.dev.jna#jna;4.5.0!jna.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#compiler-interface;1.2.5!compiler-interface.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#util-interface;1.2.4!util-interface.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#util-cache_2.12;1.2.4!util-cache_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.7!scala-compiler.jar
 [debug] 	[NOT REQUIRED] com.eed3si9n#sjson-new-murmurhash_2.12;0.8.2!sjson-new-murmurhash_2.12.jar
+[debug] 	[NOT REQUIRED] com.lmax#disruptor;3.4.2!disruptor.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;1.2.8!test-agent.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#compiler-bridge_2.12;1.2.5!compiler-bridge_2.12.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#zinc-classfile_2.12;1.2.5!zinc-classfile_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] com.jcraft#jsch;0.1.54!jsch.jar
 [debug] 	[NOT REQUIRED] com.eed3si9n#gigahorse-okhttp_2.12;0.3.0!gigahorse-okhttp_2.12.jar
 [debug] 	[NOT REQUIRED] com.squareup.okhttp3#okhttp-urlconnection;3.7.0!okhttp-urlconnection.jar
 [debug] 	[NOT REQUIRED] com.eed3si9n#gigahorse-core_2.12;0.3.0!gigahorse-core_2.12.jar
 [debug] 	[NOT REQUIRED] com.squareup.okhttp3#okhttp;3.7.0!okhttp.jar
-[debug] 	[NOT REQUIRED] com.typesafe#ssl-config-core_2.12;0.2.2!ssl-config-core_2.12.jar(bundle)
 [debug] 	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.0!reactive-streams.jar
-[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar
+[debug] 	[NOT REQUIRED] com.typesafe#ssl-config-core_2.12;0.2.2!ssl-config-core_2.12.jar(bundle)
 [debug] 	[NOT REQUIRED] com.typesafe#config;1.2.0!config.jar(bundle)
-[debug] 	[NOT REQUIRED] com.squareup.okio#okio;1.12.0!okio.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#zinc-compile-core_2.12;1.2.5!zinc-compile-core_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.5!scala-parser-combinators_2.12.jar(bundle)
-[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-persist_2.12;1.2.5!zinc-persist_2.12.jar
+[debug] 	[NOT REQUIRED] net.java.dev.jna#jna-platform;4.5.0!jna-platform.jar
+[debug] 	[NOT REQUIRED] com.squareup.okio#okio;1.12.0!okio.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-core_2.12;1.2.5!zinc-core_2.12.jar
 [debug] 	[NOT REQUIRED] com.trueaccord.scalapb#scalapb-runtime_2.12;0.6.0!scalapb-runtime_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-persist_2.12;1.2.5!zinc-persist_2.12.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#sbinary_2.12;0.5.0!sbinary_2.12.jar
 [debug] 	[NOT REQUIRED] com.trueaccord.lenses#lenses_2.12;0.4.12!lenses_2.12.jar
 [debug] 	[NOT REQUIRED] com.lihaoyi#fastparse_2.12;0.4.2!fastparse_2.12.jar
 [debug] 	[NOT REQUIRED] com.google.protobuf#protobuf-java;3.3.1!protobuf-java.jar(bundle)
 [debug] 	[NOT REQUIRED] com.lihaoyi#fastparse-utils_2.12;0.4.2!fastparse-utils_2.12.jar
 [debug] 	[NOT REQUIRED] com.lihaoyi#sourcecode_2.12;0.1.3!sourcecode_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#core-macros_2.12;1.2.8!core-macros_2.12.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#protocol_2.12;1.2.8!protocol_2.12.jar
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt.ipcsocket#ipcsocket;1.0.0!ipcsocket.jar
+[debug] 	[NOT REQUIRED] org.scala-sbt#protocol_2.12;1.2.8!protocol_2.12.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#util-scripted_2.12;1.2.4!util-scripted_2.12.jar
-[debug] no default cache defined: set to C:\Users\Marcos Miranda\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] 	[NOT REQUIRED] org.scala-sbt.ipcsocket#ipcsocket;1.0.0!ipcsocket.jar
 [debug] 	[NOT REQUIRED] com.github.cb372#scalacache-core_2.12;0.20.0!scalacache-core_2.12.jar
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.5!scala-parser-combinators_2.12.jar(bundle)
 [debug] 	[NOT REQUIRED] com.github.ben-manes.caffeine#caffeine;2.5.6!caffeine.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt.ivy#ivy;2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832!ivy.jar
-[debug] 	[NOT REQUIRED] org.scala-sbt#zinc-core_2.12;1.2.5!zinc-core_2.12.jar
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] no default cache defined: set to C:\Users\Marcos Miranda\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (227ms)
-[debug] 	default cache: C:\Users\Marcos Miranda\.ivy2\cache
+[debug] 	[NOT REQUIRED] org.scala-sbt#core-macros_2.12;1.2.8!core-macros_2.12.jar
+[info] downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/jars/sbt-buildinfo.jar ...
+[debug] 	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/jars/sbt-buildinfo.jar
+[debug] no default ivy user dir defined: set to C:\Users\mirandm\.ivy2
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] no default cache defined: set to C:\Users\mirandm\.ivy2\cache
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/C:/Users/mirandm/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] settings loaded (40ms)
+[debug] 	default cache: C:\Users\mirandm\.ivy2\cache
 [debug] 	default resolver: default
 [debug] 	-- 5 resolvers:
 [debug] 	shared [file]
@@ -14753,66 +14860,20 @@
 [debug] 	public [ibiblio]
 [debug] 	main [chain] [shared, public]
 [debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default cache defined: set to C:\Users\Marcos Miranda\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] settings loaded (243ms)
-[debug] 	default cache: C:\Users\Marcos Miranda\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (254ms)
-[debug] 	default cache: C:\Users\Marcos Miranda\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] no default cache defined: set to C:\Users\Marcos Miranda\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Marcos%20Miranda/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (270ms)
-[debug] 	default cache: C:\Users\Marcos Miranda\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] :: resolution report :: resolve 3465ms :: artifacts dl 458ms
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT compile produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-compile.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT runtime produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-runtime.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT test produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-test.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT provided produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-provided.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT optional produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-optional.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT compile-internal produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-compile-internal.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT runtime-internal produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-runtime-internal.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT test-internal produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-test-internal.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT plugin produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-plugin.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT pom produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-pom.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT scala-tool produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-scala-tool.xml
-[debug] 	resolve done (3465ms resolve - 458ms download)
-[info] Done updating.
-1.0\resolution-cache\reports\default-dev-build-provided.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT optional produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-optional.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT compile-internal produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-compile-internal.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT runtime-internal produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-runtime-internal.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT test-internal produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-test-internal.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT plugin produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-plugin.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT pom produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-pom.xml
-[debug] 	report for default#dev-build;0.1.0-SNAPSHOT scala-tool produced in D:\DEV\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-dev-build-scala-tool.xml
-[debug] 	resolve done (3420ms resolve - 2685ms download)
+[debug] 	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/jars/sbt-buildinfo.jar.sha1
+[debug] sha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/jars/sbt-buildinfo.jar
+[info] 	[SUCCESSFUL ] com.eed3si9n#sbt-buildinfo;0.7.0!sbt-buildinfo.jar (1283ms)
+[debug] :: resolution report :: resolve 6773ms :: artifacts dl 1296ms
+[debug] 	report for default#translationtester-build;0.1.0-SNAPSHOT compile produced in C:\Users\mirandm\translationTester\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-translationtester-build-compile.xml
+[debug] 	report for default#translationtester-build;0.1.0-SNAPSHOT runtime produced in C:\Users\mirandm\translationTester\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-translationtester-build-runtime.xml
+[debug] 	report for default#translationtester-build;0.1.0-SNAPSHOT test produced in C:\Users\mirandm\translationTester\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-translationtester-build-test.xml
+[debug] 	report for default#translationtester-build;0.1.0-SNAPSHOT provided produced in C:\Users\mirandm\translationTester\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-translationtester-build-provided.xml
+[debug] 	report for default#translationtester-build;0.1.0-SNAPSHOT optional produced in C:\Users\mirandm\translationTester\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-translationtester-build-optional.xml
+[debug] 	report for default#translationtester-build;0.1.0-SNAPSHOT compile-internal produced in C:\Users\mirandm\translationTester\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-translationtester-build-compile-internal.xml
+[debug] 	report for default#translationtester-build;0.1.0-SNAPSHOT runtime-internal produced in C:\Users\mirandm\translationTester\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-translationtester-build-runtime-internal.xml
+[debug] 	report for default#translationtester-build;0.1.0-SNAPSHOT test-internal produced in C:\Users\mirandm\translationTester\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-translationtester-build-test-internal.xml
+[debug] 	report for default#translationtester-build;0.1.0-SNAPSHOT plugin produced in C:\Users\mirandm\translationTester\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-translationtester-build-plugin.xml
+[debug] 	report for default#translationtester-build;0.1.0-SNAPSHOT pom produced in C:\Users\mirandm\translationTester\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-translationtester-build-pom.xml
+[debug] 	report for default#translationtester-build;0.1.0-SNAPSHOT scala-tool produced in C:\Users\mirandm\translationTester\project\target\scala-2.12\sbt-1.0\resolution-cache\reports\default-translationtester-build-scala-tool.xml
+[debug] 	resolve done (6773ms resolve - 1296ms download)
 [info] Done updating.

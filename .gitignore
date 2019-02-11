@@ -1,0 +1,17 @@
+.cache/
+.history/
+.lib/
+target/
+src_managed/
+/.project/
+project/
+.scala_dependencies
+.worksheet
+/bin/
+/.classpath
+/.project
+/.cache-main
+/.cache-tests
+/.idea
+/.settings/
+/.cache
