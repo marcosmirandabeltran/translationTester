@@ -2,7 +2,7 @@ import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Directives.{as, complete, entity, get, onSuccess, path, post}
 import akka.stream.ActorMaterializer
-import model.{ToTranslateRequest, TranslationModel}
+import model.{ToTranslateRequest}
 import routes.{BuildInfo, MainRoutes}
 
 import scala.concurrent.Future
