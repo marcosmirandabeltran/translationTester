@@ -1,16 +1,18 @@
 package model
 
 import spray.json.DefaultJsonProtocol
-import akka.http.scaladsl._
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
+import translation.TranslationProcessor
 
-import spray.json._
+import scala.concurrent.Future
 
-  case class ToTranslateRequest(segments: List[String], trgLng: String)
-  object ToTranslateRequestSupport extends DefaultJsonProtocol with SprayJsonSupport {
-    implicit val PortofolioFormats = jsonFormat2(ToTranslateRequest)
+case class ToTranslateRequest(segments: List[String], trgLng: String)
+    extends TranslationTesterRequests {
+  override def toTranslate(): List[Future[String]] = {
+    (segments.map(seg => TranslationProcessor.translate(seg, trgLng)))
   }
+}
 
-
+case class Color(segments: List[String], trgLng: String)
 
 
