@@ -1,14 +1,27 @@
 package model
 
 import spray.json.DefaultJsonProtocol
-import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
 import translation.TranslationProcessor
 
 import scala.concurrent.Future
 import scala.util.parsing.json.JSON
 
-case class JsonToTranslateRequest(jsonBody: String, trgLng: String)
-    extends TranslationTesterRequests {
+
+
+trait JsonToTranslateReq extends TranslationTesterRequests{
+  val jsonBody: String
+  val trgLng: String
+
+
+  def toTranslate(): List[Future[String]]
+  def processJson(jsonEntries: Map[String, Any]):  List[Future[String]]
+}
+
+
+
+
+ case class JsonToTranslateRequestBasic(jsonBody: String, trgLng: String) extends JsonToTranslateReq {
+
   def toTranslate(): List[Future[String]] = {
     val result = JSON.parseFull(jsonBody)
     result match {
@@ -21,13 +34,13 @@ case class JsonToTranslateRequest(jsonBody: String, trgLng: String)
     jsonEntries.toList.map(entry =>
       entry match {
         case (key: String, segment: String) =>
-          TranslationProcessor.translate(segment, "fr-FR")
-    })
+          TranslationProcessor.translate(ToTranslateData(segment, trgLng, 0))
+      })
   }
 
 }
-object JsonToTranslateRequestSupport
-    extends DefaultJsonProtocol
-    with SprayJsonSupport {
-  implicit val PortofolioFormatsa = jsonFormat2(JsonToTranslateRequest)
-}
+
+
+
+
+

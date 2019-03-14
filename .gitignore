@@ -4,6 +4,8 @@
 target/
 src_managed/
 /.project/
+/project/
+project/*
 project/
 .scala_dependencies
 .worksheet
@@ -15,3 +17,5 @@ project/
 /.idea
 /.settings/
 /.cache
+target
+*.class
