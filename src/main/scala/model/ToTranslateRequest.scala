@@ -9,10 +9,9 @@ import scala.concurrent.Future
 case class ToTranslateRequest(segments: List[String], trgLng: String)
     extends TranslationTesterRequests {
   override def toTranslate(): List[Future[String]] = {
-    (segments.map(seg => TranslationProcessor.translate(seg, trgLng)))
+    (segments.map(seg =>
+      TranslationProcessor.translate(ToTranslateData(seg, trgLng, 0))))
   }
 }
 
-case class Color(segments: List[String], trgLng: String)
-
-
+case class ToTranslateData(src: String, trgLng: String, expansion: Int)

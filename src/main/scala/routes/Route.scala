@@ -1,8 +1,8 @@
 package routes
 
-
 import akka.http.scaladsl.server.Directives._
 import model._
+
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
@@ -24,12 +24,19 @@ trait MainRoutes extends JsonSupport {
             }
           } ~
             path("json") {
-              entity(as[JsonToTranslateRequest]) { request =>
+              //We should support request with or without expansion
+              entity(as[JsonToTranslateRequestExpansion]) { request =>
                 onSuccess(Future.sequence(request.toTranslate())) {
                   translated =>
                     complete(translated)
                 }
-              }
+              } ~
+                entity(as[JsonToTranslateRequestBasic]) { request =>
+                  onSuccess(Future.sequence(request.toTranslate())) {
+                    translated =>
+                      complete(translated)
+                  }
+                }
             }
         }
       }

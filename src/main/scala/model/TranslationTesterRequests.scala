@@ -11,6 +11,7 @@ trait TranslationTesterRequests {
 
 trait JsonSupport extends SprayJsonSupport with DefaultJsonProtocol {
   implicit val SegmentstoTranslateFormat = jsonFormat2(ToTranslateRequest)
-  implicit val JsonRequestFormat = jsonFormat2(JsonToTranslateRequest)
+  implicit val JsonRequestFormat = jsonFormat3(JsonToTranslateRequestExpansion)
+  implicit val JsonRequestFormatNoExp = jsonFormat2(JsonToTranslateRequestBasic)
 
 }
