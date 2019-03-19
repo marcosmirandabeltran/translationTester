@@ -1,6 +1,6 @@
 # translationTester
 
-UNDER DEVELOPMENT, fully functional POC:
+# UNDER DEVELOPMENT, fully functional POC:
 
 The purpose of this microservice, its expose a number of different API's for the Software UI testing of different projects.
 
@@ -10,9 +10,9 @@ For a given JSON localization file (key: String) or a given segment, and a parti
 Update (19/03/2019)
 
 
-Explanation of key concepts:
+## Explanation of key concepts:
 
-expansion:
+### expansion:
 
 extra info: possible values
 0 = no expansion (except for starting_chars and ending_chars added)
@@ -22,11 +22,11 @@ note expansion for shorter strings (< 5) pushed to every 1 of 2, if string_expan
 note expansion for string 5 - 7 chars in length pushed to every 1 of 4, if string_expansion not 0
 
 
-URLS:
+### URLS:
 
 URLS shouldn't be localized/translated, so for the string "Lorem ipsum www.google.ie dolor sit amet" , the service should return something like this in korean with expansion 2 , "LL어어rre갑e갑mm ipssu삯u삯m www.google.ie d어ll어rr ssiitt"
 
-LANGUAGE CODES:
+### LANGUAGE CODES:
 
 If one of the segments contain is a language code instead of a regular string , like en-US should be replaced for the particular code for the target language:
 
@@ -43,23 +43,24 @@ should return [
 
 same with ENU (international language code) or english
 
-
-To start the service follow this steps:  
+## How to start a service  
 
 1- Clone the repo
 2- From the repo folder, use the command "sbt run"  (NOTE: This requires SBT , scala and a JVM installed in the computer)
 
 
+# REST API
+
 This will expose a web server on the port 8080 (by default, should be configurable in a later stage of the development), there is 3 types of requests accepted:
 
 POST /json:
-
+> 
 {
 	"jsonBody": "JSON LOCALIZATION FILES WITH KEY: STRINGS",
 	"trgLng":"Language code , see file languagemapping.json for more language codes, a valid example would be ko for korean",
 	"expansion": (0, 1, or 2) as an int , no quotes, look for expansion documentation in this doc for reference
 }
-
+>
 Example:
 
 {
