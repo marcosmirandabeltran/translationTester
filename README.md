@@ -2,6 +2,13 @@
 
 # UNDER DEVELOPMENT, fully functional POC:
 
+
+Everyone is welcome to contribute, just create a branch and do a PR, I will review it ASAP, it only requires some business understanding of localization as a service (LAAS) and Scala + Akka
+
+TODO: Delete local folders from the repo
+Add unit testing (use Akka Testkit)
+
+
 The purpose of this microservice, its expose a number of different API's for the Software UI testing of different projects.
 
 For a given JSON localization file (key: String) or a given segment, and a particular target-language the application should reply with the original segment with local characters of the target language and a expansion factor applied.
