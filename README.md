@@ -52,7 +52,7 @@ same with ENU (international language code) or english
 # REST API
 
 This will expose a web server on the port 8080 (by default, should be configurable in a later stage of the development), there is 3 types of requests accepted:
-
+```
 POST /json:
 > 
 {
@@ -88,6 +88,7 @@ POST /segments:
 {"segments": ["Hello I am Marcos", "How are you?"],
 "trgLng":"de"
 }
+```
 
 
 (More info to be added)
